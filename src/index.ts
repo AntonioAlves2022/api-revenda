@@ -18,7 +18,7 @@ const start = async () => {
         return reply.status(200).send(cars);
     });
 
-    app.listen({port: 3333})
+    await app.listen({port: 3333})
 }
 
 start();
