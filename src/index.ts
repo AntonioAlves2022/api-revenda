@@ -17,6 +17,8 @@ const start = async () => {
         const cars = await prisma.car.findMany();
         return reply.status(200).send(cars);
     });
+
+    app.listen({port: 3333})
 }
 
 start();
